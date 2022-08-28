@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import InsertDataView from "./ui/views/InsertData/index";
+import Navbar from "./ui/views/Navbar";
+import InsertRunData from "./ui/views/InsertData/index";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="columns is-mobile">
+        <div className="column has-background-light"></div>
+        <div className="column is-four-fifths ">
+          <Navbar />
+          <InsertRunData />
+        </div>
+        <div className="column has-background-light"></div>
+      </div>
+    </>
   );
 }
 
