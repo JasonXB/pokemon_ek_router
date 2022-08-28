@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Navbar from "../Navbar";
+import VisitedRoutes from "./VisitedRoutes";
 import PasteField from "./PasteField";
 
 export default class index extends Component {
   render() {
     return (
       <>
-        {/* <VisitedRoutes /> */}
+        <VisitedRoutes />
         <PasteField />
       </>
     );

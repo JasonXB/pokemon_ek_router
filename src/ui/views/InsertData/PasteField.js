@@ -4,24 +4,31 @@ export default class PasteField extends Component {
   render() {
     return (
       <section className="content">
-        <h4 style={{ marginTop: "1rem" }}>
-          OPTIONAL STEP 2:
+        <h4 style={s.h4}>
+          STEP 2 (optional)
           <br />
           Use EKHex to copy all pokémon you've caught to your clipboard
         </h4>
         <textarea
           className="textarea"
           placeholder="PASTE TEAM HERE"
-          rows={7}
+          rows={5}
         ></textarea>
+        <h4 style={s.h4}>
+          STEP 3 (mandatory)
+          <br />
+          To update your run data, click the blue button
+          <br />
+          To reset your run data, hit the red button
+        </h4>
         <button
-          style={{ marginTop: "1rem" }}
+          style={{ marginTop: "0.5rem" }}
           className="button is-info is-link"
         >
           SUBMIT ALL CHANGES
         </button>
         <button
-          style={{ marginTop: "1rem", marginLeft: "1rem" }}
+          style={{ marginTop: "0.5rem", marginLeft: "1rem" }}
           className="button is-info is-danger"
         >
           RESET RUN DATA
@@ -30,3 +37,7 @@ export default class PasteField extends Component {
     );
   }
 }
+
+const s = {
+  h4: { marginTop: "1rem" },
+};

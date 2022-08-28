@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class ToggleButtons extends Component {
+class RouteButton extends Component {
   constructor(props) {
     super(props);
     this.state = { selected: false, route: 6 }; // all state variables go here
@@ -42,4 +42,4 @@ function mapStateToProps(state) {
   const route = state.route;
   return { route };
 }
-export default connect(mapStateToProps)(ToggleButtons);
+export default connect(mapStateToProps)(RouteButton);
