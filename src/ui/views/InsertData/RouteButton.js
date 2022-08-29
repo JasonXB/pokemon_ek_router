@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
+import { routeActions } from "../../../store/slices/routeButtons";
 class RouteButton extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { selected: false, route: 6 }; // all state variables go here
-  }
-
-  // Toggle the state variable telling the button whether to appear selected or not
-  // "this" IS UNDEFINED BY DEFAULT IN CUSTOM METHODS (REQUIRES REBIND FOR EACH METHOD CALL)
+  // EDIT REDUX STATE VALUE
+  // Routes where you've caught pokemon should have a value of true... and vice versa
+  /*
+    {
+      Littleroot Town: true // means we caught a pokemon here already
+      Route 102: false, // means we have not caught anything here yet
+    }
+  */
   toggleButton() {
-    this.setState({ selected: !this.state.selected });
+    this.props.dispatch(routeActions.toggle(this.props.areaName));
   }
-  // "this" REFERS TO THE CURRENT CLASS IN THE RENDER METHOD (NO REBIND NEEDED)
   render() {
-    // Clicking on a button should toggle whether that button has a certain class or not
-    let conditionalClass = this.state.selected === false ? "" : "is-light";
+    // Assign an "is-light" class, but only for routes where you've caught a pokemon already
+    let routeStatus = this.props.route[this.props.areaName]; // ACCESS REDUX STATE VALUE
+    let conditionalClass = routeStatus === false ? "" : "is-light";
     return (
       <button
         onClick={this.toggleButton.bind(this)} // must set value of "this" inside toggleButton method
@@ -27,6 +28,16 @@ class RouteButton extends Component {
     );
   }
 }
+
+// Feed our class the redux state object via props (helps you view state values)
+function mapStateToProps(state) {
+  const route = state.route;
+  return { route }; // can acces with this.props.route in our class
+}
+// Let our class dispatch actions to edit Redux state values
+
+export default connect(mapStateToProps)(RouteButton);
+
 // STYLING JSX
 const s = {
   button: {
@@ -37,9 +48,3 @@ const s = {
     width: "10rem",
   },
 };
-
-function mapStateToProps(state) {
-  const route = state.route;
-  return { route };
-}
-export default connect(mapStateToProps)(RouteButton);
