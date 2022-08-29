@@ -2,18 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { routeActions } from "../../../store/slices/routeButtons";
 class RouteButton extends Component {
-  // EDIT REDUX STATE VALUE
-  // Routes where you've caught pokemon should have a value of true... and vice versa
-  /*
-    {
-      Littleroot Town: true // means we caught a pokemon here already
-      Route 102: false, // means we have not caught anything here yet
-    }
-  */
+  // EDITS REDUX STATE VALUE
+  // Updates which routes the user has already caught pokemon on
   toggleButton() {
     this.props.dispatch(routeActions.toggle(this.props.areaName));
   }
   render() {
+    console.log(this.props);
     // Assign an "is-light" class, but only for routes where you've caught a pokemon already
     let routeStatus = this.props.route[this.props.areaName]; // ACCESS REDUX STATE VALUE
     let conditionalClass = routeStatus === false ? "" : "is-light";
@@ -31,8 +26,9 @@ class RouteButton extends Component {
 
 // Feed our class the redux state object via props (helps you view state values)
 function mapStateToProps(state) {
-  const route = state.route;
-  return { route }; // can acces with this.props.route in our class
+  const route = state.route; // route is a slice name
+  const catches = state.catches; // catch is a slice name
+  return { route, catches }; // can acces with this.props.route in our class
 }
 // Let our class dispatch actions to edit Redux state values
 

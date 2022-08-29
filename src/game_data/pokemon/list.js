@@ -1,5 +1,5 @@
 // index corresponds to the pokemon dex number
-export const pokemonArray = [
+export const pokemonList = [
   "Bulbasaur",
   "Ivysaur",
   "Venusaur",

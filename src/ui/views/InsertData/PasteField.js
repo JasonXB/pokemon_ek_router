@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 
 export default class PasteField extends Component {
+  // Creates a list of pokemon matches in that string, and their (pre)evolutions too
+  readInput(){
+    const readInput = function () {
+      // 
+      // These pokemon will now be considered caught
+      // There is a state object in Redux with a dedicated KVP for all the pokemon available in-game
+      // Update it after reading the input from
+    };
+  }
   render() {
     return (
       <section className="content">
@@ -41,3 +50,7 @@ export default class PasteField extends Component {
 const s = {
   h4: { marginTop: "1rem" },
 };
+
+// Scans the text input the user pastes
+
+
