@@ -28,10 +28,10 @@ export const pokemonArray = [
   "Raichu",
   "Sandshrew",
   "Sandslash",
-  "Nidoran(f)",
+  "Nidoran♀",
   "Nidorina",
   "Nidoqueen",
-  "Nidoran(m)",
+  "Nidoran♂",
   "Nidorino",
   "Nidoking",
   "Clefairy",
@@ -82,7 +82,7 @@ export const pokemonArray = [
   "Slowbro",
   "Magnemite",
   "Magneton",
-  "Farfetch'd",
+  "Farfetch’d", 
   "Doduo",
   "Dodrio",
   "Seel",
@@ -387,3 +387,5 @@ export const pokemonArray = [
   "Jirachi",
   "Deoxys",
 ];
+
+// Common miss-spellings: Farfetch'd, Nidoran F and M

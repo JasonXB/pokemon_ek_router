@@ -281,12 +281,12 @@ export const pokedexV1 = {
     locations: ["Route 111", "Mirage Tower", "Safari Zone"],
     dexNumber: "028",
   },
-  "Nidoran(f)": {
+  "Nidoran♀": {
     types: ["poison"],
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png",
     sprite:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
-    evos: ["Nidoran(f)", "Nidorina", "Nidoqueen"],
+    evos: ["Nidoran♀", "Nidorina", "Nidoqueen"],
     locations: ["Route 104"],
     dexNumber: "029",
   },
@@ -295,7 +295,7 @@ export const pokedexV1 = {
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png",
     sprite:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/30.png",
-    evos: ["Nidoran(f)", "Nidorina", "Nidoqueen"],
+    evos: ["Nidoran♀", "Nidorina", "Nidoqueen"],
     locations: ["Route 118", "Mirage Tower"],
     dexNumber: "030",
   },
@@ -304,16 +304,16 @@ export const pokedexV1 = {
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
     sprite:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/31.png",
-    evos: ["Nidoran(f)", "Nidorina", "Nidoqueen"],
+    evos: ["Nidoran♀", "Nidorina", "Nidoqueen"],
     locations: ["Route 111", "Safari Zone"],
     dexNumber: "031",
   },
-  "Nidoran(m)": {
+  "Nidoran♂": {
     types: ["poison"],
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png",
     sprite:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
-    evos: ["Nidoran(m)", "Nidorino", "Nidoking"],
+    evos: ["Nidoran♂", "Nidorino", "Nidoking"],
     locations: ["Route 102"],
     dexNumber: "032",
   },
@@ -322,7 +322,7 @@ export const pokedexV1 = {
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png",
     sprite:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/33.png",
-    evos: ["Nidoran(m)", "Nidorino", "Nidoking"],
+    evos: ["Nidoran♂", "Nidorino", "Nidoking"],
     locations: ["Route 118", "Mirage Tower"],
     dexNumber: "033",
   },
@@ -331,7 +331,7 @@ export const pokedexV1 = {
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png",
     sprite:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/34.png",
-    evos: ["Nidoran(m)", "Nidorino", "Nidoking"],
+    evos: ["Nidoran♂", "Nidorino", "Nidoking"],
     locations: ["Route 111", "Safari Zone", "Victory Road"],
     dexNumber: "034",
   },
@@ -888,12 +888,12 @@ export const pokedexV1 = {
     locations: ["New Mauville"],
     dexNumber: "082",
   },
-  "Farfetch'd": {
+  "Farfetch’d": {
     types: ["normal", "flying"],
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/083.png",
     sprite:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
-    evos: ["Farfetch'd"],
+    evos: ["Farfetch’d"],
     locations: ["Route 102"],
     dexNumber: "083",
   },
