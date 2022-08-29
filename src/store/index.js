@@ -5,7 +5,7 @@ import catchReducer from "./slices/catches";
 // Create a store with the configureStore method (multiple slices)
 const store = configureStore({
   reducer: {
-    route: routeReducer,
+    routes: routeReducer,
     catches: catchReducer,
   },
 });

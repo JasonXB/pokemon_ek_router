@@ -10,7 +10,7 @@ class RouteButton extends Component {
   render() {
     console.log(this.props);
     // Assign an "is-light" class, but only for routes where you've caught a pokemon already
-    let routeStatus = this.props.route[this.props.areaName]; // ACCESS REDUX STATE VALUE
+    let routeStatus = this.props.routes[this.props.areaName]; // ACCESS REDUX STATE VALUE
     let conditionalClass = routeStatus === false ? "" : "is-light";
     return (
       <button
@@ -26,9 +26,9 @@ class RouteButton extends Component {
 
 // Feed our class the redux state object via props (helps you view state values)
 function mapStateToProps(state) {
-  const route = state.route; // route is a slice name
+  const routes = state.routes; // route is a slice name
   const catches = state.catches; // catch is a slice name
-  return { route, catches }; // can acces with this.props.route in our class
+  return { routes, catches }; // can acces with this.props.route in our class
 }
 // Let our class dispatch actions to edit Redux state values
 
